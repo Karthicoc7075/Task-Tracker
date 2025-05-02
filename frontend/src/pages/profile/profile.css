@@ -1,0 +1,58 @@
+
+
+.profile{
+    width: 100%;
+}
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.logout-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+    margin-top: 1rem;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile .model-buttons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+   
+}
+
+
+.profile .model-button{
+    padding: .6rem .8rem;
+    margin-top: 1rem;
+    background-color: #36a9ad;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.model-button:hover{
+   opacity: .8;
+    transition: all .3s ease-in-out;
+}
+
+
+.model-button.cencel-btn{
+    background-color: #f44336;
+}
+
+

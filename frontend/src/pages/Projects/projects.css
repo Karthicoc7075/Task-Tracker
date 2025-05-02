@@ -1,0 +1,244 @@
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.projects-header h3 {
+  font-size: 2rem;
+  color: #333;
+
+}
+
+.projects-header .addIcon{
+    width: 28px;
+    height: 28px;
+}
+.projects-header .create-btn {
+  display: flex;
+    align-items: center;
+    gap: .4rem;
+  padding: 0.5rem 1rem;
+  color: #36a9ad;
+  cursor: pointer;
+}
+.projects-header button:hover {
+  background-color: #0056b3;
+}
+
+.projects-cards-list {
+  display: flex;
+    flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.projects-card {
+  position: relative;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.projects-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.projects-card p {
+  font-size: 1rem;
+  color: #707070;
+  margin: 0;
+}
+.projects-card-button-edit{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    padding: 1rem 0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.projects-card button {
+  padding: 0.5rem 1rem;
+  background-color: #36a9ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.projects-card button:hover {
+  background-color: #0056b3;
+}
+
+.projects-card .delete-btn {
+  background-color: #f44336;
+}   
+
+.projects-card .delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.projects-card-date {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.projects .model-button {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding: 1rem 0;
+}
+.projects .model-button button {
+    background-color: #f44336;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.projects .model-button button:hover {
+    background-color: #d32f2f;
+}
+
+.projects .model-button .cancel-btn {
+    background-color: #36a9ad;
+    
+}
+
+.projects .model-button .cancel-btn:hover {
+    background-color: #0056b3;
+}
+
+.projects .model-button  .delete-btn {
+    background-color: #f44336;
+}
+
+.projects .model-button  .delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+
+.projects .create-model{
+    position: relative;
+}
+.projects .create-form{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 400px;
+}
+
+
+.projects .create-form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: .6rem ;
+
+}
+
+.projects .create-form input{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.projects .create-form select{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.projects .create-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .create-form-btn button{
+
+    padding: 1rem;
+    background-color: #36a9ad;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.create-model .close-btn{
+    position: absolute;
+    right: 0;
+    top: 18px;
+    
+}
+.create-model .closeIcon{
+    width: 28px;
+    height: 28px;
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.projects-cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+  width: 100%;
+    gap: 1rem;
+}
+.projects-no-data{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40dvh;
+}
+
+@media screen and (max-width: 767px) {
+  .projects {
+    padding: 0rem;
+    gap: 1rem;
+  }
+
+  .projects-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .projects-header .create-btn {
+    font-size: 1rem;
+  }
+
+  .projects-card {
+    width: 100%;
+    padding: 1rem;
+  }
+  .create-form{
+    width: 100% !important;
+  }
+}

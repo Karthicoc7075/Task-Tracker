@@ -1,0 +1,391 @@
+.tasks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tasks-header h3 {
+  font-size: 2rem;
+  color: #333;
+
+}
+
+.tasks-header .addIcon{
+    width: 28px;
+    height: 28px;
+}
+.tasks-header .create-btn {
+  display: flex;
+    align-items: center;
+    gap: .4rem;
+  padding: 0.5rem 1rem;
+  color: #36a9ad;
+  cursor: pointer;
+}
+.tasks-header button:hover {
+  background-color: #0056b3;
+}
+
+.tasks-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tasks-card {
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem 2.4rem; 
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.tasks-card .tasks-card-header{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding: .6rem ;
+}
+.tasks-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.tasks-card p {
+  font-size: 1rem;
+  color: #707070;
+  margin: 0;
+}
+
+.tasks-card .tasks-card-status{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .6rem ;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1.2rem;
+    background-color: rgb(239, 255, 168);
+    color: #d4e02d;
+    box-shadow: rgba(61, 65, 53, 0.1) 0px 2px 5px;
+}
+
+.tasks-card .tasks-card-status.Pending{
+    background-color: rgb(255, 171, 171);
+    color: #f92525;
+    box-shadow: rgba(61, 65, 53, 0.1) 0px 2px 5px;
+}
+.tasks-card .tasks-card-status.Completed{
+    background-color: rgb(171, 250, 171);
+    color: #4caf50;
+    box-shadow: rgba(61, 65, 53, 0.1) 0px 2px 5px;
+}
+
+
+.created-date{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: .8rem !important;
+    font-weight: 600;
+    border-radius: 1.2rem;
+}
+.delete-model{
+    position: relative;
+    top: -10px;
+}
+
+.tasks-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.no-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.tasks-loader  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.tasks-card-button{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    padding: 1rem 0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tasks-card button {
+  padding: 0.5rem 1rem;
+  background-color: #36a9ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tasks-card button:hover {
+  background-color:#65d8dc;
+}
+
+.tasks-card .delete-btn {
+  background-color: #f44336;
+}   
+
+.tasks-card .delete-btn:hover {
+  background-color: #d32f2f;
+}
+.delete-model .close-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+.delete-model .closeIcon{
+    width: 28px;
+    height: 28px;
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.tasks .model-button {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding: 1rem 0;
+}
+.tasks .model-button button {
+    background-color: #f44336;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tasks .model-button button:hover {
+    background-color: #d32f2f;
+}
+
+.tasks .model-button .cancel-btn {
+    background-color: #36a9ad;
+    
+}
+
+.tasks .model-button .cancel-btn:hover {
+    background-color: #65d8dc;
+}
+
+.tasks .model-button  .delete-btn {
+    background-color: #f44336;
+}
+
+.tasks .model-button  .delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.tasks .create-model{
+    position: relative;
+}
+.tasks .create-form{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 400px;
+}
+
+
+.tasks .create-form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: .6rem ;
+
+}
+
+.tasks .create-form input{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.tasks .create-form select{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.tasks .create-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tasks .create-form-btn button{
+
+    padding: 1rem;
+    background-color: #36a9ad;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.create-model .close-btn{
+    position: absolute;
+    right: 0;
+    top: 18px;
+    
+}
+.create-model .closeIcon{
+    width: 28px;
+    height: 28px;
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+/* ---------------------- */
+
+
+.tasks .update-model{
+    position: relative;
+}
+.tasks .update-form{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 400px;
+}
+
+
+.tasks .update-form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: .6rem ;
+
+}
+
+.tasks .update-form input{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.tasks .update-form select{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.tasks .update-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tasks .update-form-btn button{
+
+    padding: 1rem;
+    background-color: #36a9ad;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.update-model .close-btn{
+    position: absolute;
+    right: 0;
+    top: 18px;
+    
+}
+.update-model .closeIcon{
+    width: 28px;
+    height: 28px;
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .tasks{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .tasks-header h3 {
+        font-size: 1.8rem;
+    }
+    .tasks-header .create-btn {
+        font-size: 1.2rem;
+    }
+    .tasks-card {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .tasks-card h4 {
+        font-size: 1.5rem;
+    }
+    .tasks-card p {
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    .tasks{
+        padding: 0rem;
+        gap: 1rem;
+    }
+    .tasks-header h3 {
+        font-size: 1.5rem;
+    }
+    .tasks-header .create-btn {
+        font-size: 1rem;
+    }
+    .tasks-card {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .tasks-card h4 {
+        font-size: 1.2rem;
+    }
+    .tasks-card p {
+        font-size: 0.9rem;
+    }
+}

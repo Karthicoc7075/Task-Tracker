@@ -1,0 +1,21 @@
+.layout{
+    display: flex;
+    gap: 2rem;
+    height: calc(100dvh - 256px);
+    padding: 4rem;
+
+}
+
+
+@media  screen and (max-width: 767px) {
+    .layout{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 2rem;
+        gap: 1rem;
+        height: calc(100dvh - 64px);
+    }
+    
+
+    
+}
