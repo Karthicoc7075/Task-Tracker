@@ -4,9 +4,9 @@ Task Tracker is a full-stack MERN (MongoDB, Express, React, Node.js) app for man
 
 ## 📁 Project Structure
 
-task-tracker/
-├── frontend/ # React app
-└── backend/ # Express server
+task-tracker
+----frontend/ # React app
+----backend/ # Express server
 
 terminal
 
@@ -16,22 +16,21 @@ cd task-tracker
 
 2.Run Backend
 
-cd backend
-npm install
-npm start
+ cd backend
+ npm install
+ npm start
 
 Create a config.js file in backend/config with:
 
-PORT=8000
+ PORT=8000
  mongodbUrl: "enter mongodb url",
-jwtSecret: "enter jwt secret",
-
+ jwtSecret: "enter jwt secret",
 
 3. Run Frontend
 
-cd frontend
-npm install
-npm start
+ cd frontend
+ npm install
+ npm start
 
 
 
