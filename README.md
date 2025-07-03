@@ -10,7 +10,7 @@ task-tracker
 
 terminal
 
-git clone https://github.com/your-username/task-tracker.git
+git clone https://github.com/karthicoc7075/task-tracker.git
 cd task-tracker
 
 
